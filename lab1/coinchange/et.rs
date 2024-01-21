@@ -1,12 +1,23 @@
 use std::cmp;
+use std::time::{Instant, Duration};
 
 fn main(){
-    let n = read_int();
-    let a = read_int();
-    let b = read_int();
-    let c = read_int();
+    let mut n = 1;
+    let a = 5;
+    let b = 6;
+    let c = 7;
 
-    print!("{}", coins(n,a,b,c));
+    let mut now;
+    let mut elapsed = Duration::new(0,0);
+
+    while elapsed.as_millis() < 1000 {
+        now = Instant::now();
+        coins(n,a,b,c);
+        elapsed = now.elapsed();
+        println!("{} {}", n, elapsed.as_micros());
+        n+=1;
+        //n=n*2;
+    }
 }
 
 fn coins(n:i32, a:i32, b:i32, c:i32)->i32{
@@ -22,11 +33,4 @@ fn coins(n:i32, a:i32, b:i32, c:i32)->i32{
         }
     }
     n_coins[n as usize]
-}
-
-fn read_int()->i32{
-    use std::io;
-    let mut line = String::new();
-    let _ = io::stdin().read_line(&mut line);
-    line.trim().parse::<i32>().unwrap()
 }
