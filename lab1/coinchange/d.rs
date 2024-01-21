@@ -6,12 +6,12 @@ fn main(){
     let mut n = 1;
     let a = 5;
     let b = 6;
-    let c = 6;
+    let c = 7;
     
     let mut now;
     let mut elapsed = Duration::new(0,0);
 
-    while n < 6000 {
+    while elapsed.as_millis() < 1000 {
         now = Instant::now();
         let mut mem =vec![-1; (n+1) as usize];
         coins(n,a,b,c, &mut mem);
