@@ -16,9 +16,9 @@ fn main(){
         let mut mem =vec![-1; (n+1) as usize];
         coins(n,a,b,c, &mut mem);
         elapsed = now.elapsed();
-        println!("{} {}", n, elapsed.as_micros());
-        n+=1;
-        //n=n*2;
+        println!("{} {}", n, elapsed.as_millis());
+        //n+=1;
+        n=n*2;
     }
 }
 
@@ -39,11 +39,4 @@ fn min(a:i32, b:i32, c:i32, d:i32)->i32{
     let min1 = cmp::min(a, b);
     let min2 = cmp::min(c, d);
     cmp::min(min1, min2)
-}
-
-fn read_int()->i32{
-    use std::io;
-    let mut line = String::new();
-    let _ = io::stdin().read_line(&mut line);
-    line.trim().parse::<i32>().unwrap()
 }

@@ -10,7 +10,7 @@ fn main(){
     let mut now;
     let mut elapsed = Duration::new(0,0);
 
-    while elapsed.as_millis() < 1000 {
+    while n < 30000 {
         now = Instant::now();
         coins(n,a,b,c);
         elapsed = now.elapsed();
