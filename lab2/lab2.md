@@ -7,7 +7,7 @@
 
 ## Lab 2: NP-completeness reductions
 
-At the bottom of this page there are several theory questions related to the lab. \_It is optional to solve the theory questions, but thinking about them will be helpful for solving the lab. If you present these no later than the theory bonus deadline for the lab, **and** also present the lab itself by the programming bonus deadline, then you obtain a bonus point, counting as one solved problem, on the Reductions part of the written exam.  See [front page](https://canvas.kth.se/courses/37557/ "DD2352 Algorithms and Complexity, Spring 2022") for dates of these two bonus deadlines.
+At the bottom of this page there are several theory questions related to the lab. It is optional to solve the theory questions, but thinking about them will be helpful for solving the lab. If you present these no later than the theory bonus deadline for the lab, **and** also present the lab itself by the programming bonus deadline, then you obtain a bonus point, counting as one solved problem, on the Reductions part of the written exam.  See [front page](https://canvas.kth.se/courses/37557/ "DD2352 Algorithms and Complexity, Spring 2022") for dates of these two bonus deadlines.
 
 ### The Casting Problem
 
